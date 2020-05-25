@@ -38,6 +38,8 @@ dependencies {
     testImplementation("io.mockk:mockk:1.9")
 }
 
+tasks.test { useJUnitPlatform() }
+
 ktlint {
     disabledRules.set(setOf("import-ordering"))
 }
