@@ -26,6 +26,7 @@ dependencies {
     implementation("org.mapstruct:mapstruct:1.3.1.Final")
     implementation("com.github.pozo:mapstruct-kotlin:1.3.1.2")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
+    implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310")
     implementation("org.awaitility:awaitility-kotlin")
 
     kapt("org.mapstruct:mapstruct-processor:1.3.1.Final")
