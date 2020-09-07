@@ -11,7 +11,7 @@ repositories {
     gradlePluginPortal()
 }
 
-val kotlinVersion = "1.3.72"
+val kotlinVersion = "1.4.0"
 
 dependencies {
     implementation(kotlin("stdlib-jdk8", kotlinVersion))
