@@ -13,23 +13,29 @@ plugins {
 
 tasks.find { it.name == "generateLombokConfig" }?.enabled = false
 
-dependencies {
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-    implementation("org.jetbrains.kotlin:kotlin-reflect")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-jdk8")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-test")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactive")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-rx2")
+val coroutinesVersion = "1.3.9"
+val kotestVersion = "4.2.5"
+val mapstructVersion = "1.4.0.Beta3"
 
-    implementation("org.mapstruct:mapstruct:1.3.1.Final")
-    implementation("com.github.pozo:mapstruct-kotlin:1.3.1.2")
+dependencies {
+    implementation("org.jetbrains.kotlin:kotlin-reflect:1.4.10")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:$coroutinesVersion")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutinesVersion")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactive:$coroutinesVersion")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor:$coroutinesVersion")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-rx2:$coroutinesVersion")
+
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310")
     implementation("org.awaitility:awaitility-kotlin")
 
-    kapt("org.mapstruct:mapstruct-processor:1.3.1.Final")
+    implementation("com.capraro:kalidation:1.5.0")
+
+    implementation("org.mapstruct:mapstruct:$mapstructVersion")
+    kapt("org.mapstruct:mapstruct-processor:$mapstructVersion")
+    kaptTest("org.mapstruct:mapstruct-processor:${mapstructVersion}")
+    implementation("com.github.pozo:mapstruct-kotlin:1.3.1.2")
     kapt("com.github.pozo:mapstruct-kotlin-processor:1.3.1.2")
 
     testImplementation("org.jetbrains.kotlin:kotlin-test")
@@ -37,12 +43,17 @@ dependencies {
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
     testImplementation("com.nhaarman.mockitokotlin2:mockito-kotlin:2.2.0")
     testImplementation("io.mockk:mockk:1.9")
+
+    testImplementation("io.kotest:kotest-runner-junit5-jvm:$kotestVersion")
+    testImplementation("io.kotest:kotest-assertions-core-jvm:$kotestVersion")
+    testImplementation("io.kotest:kotest-property-jvm:$kotestVersion")
+    testImplementation("io.kotest:kotest-extensions-spring:$kotestVersion")
 }
 
 tasks.test { useJUnitPlatform() }
 
 ktlint {
-    disabledRules.set(setOf("import-ordering"))
+    disabledRules.set(setOf("import-ordering", "indent"))
 }
 
 tasks.withType(KotlinCompile::class.java).configureEach {
