@@ -11,13 +11,13 @@ repositories {
     gradlePluginPortal()
 }
 
-val kotlinVersion = "1.3.72"
+val kotlinVersion = "1.4.10"
 
 dependencies {
     implementation(kotlin("stdlib-jdk8", kotlinVersion))
     implementation(kotlin("gradle-plugin", kotlinVersion))
     implementation(kotlin("allopen", kotlinVersion))
-    implementation("org.jlleitschuh.gradle:ktlint-gradle:9.2.1")
+    implementation("org.jlleitschuh.gradle:ktlint-gradle:9.4.0")
     implementation("io.freefair.gradle:lombok-plugin:5.0.0-rc6")
 }
 
