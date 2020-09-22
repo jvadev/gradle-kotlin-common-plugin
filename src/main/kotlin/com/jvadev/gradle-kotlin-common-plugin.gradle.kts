@@ -1,5 +1,4 @@
 import io.freefair.gradle.plugins.lombok.tasks.Delombok
-import org.springframework.boot.gradle.plugin.SpringBootPlugin
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
@@ -7,7 +6,6 @@ plugins {
     kotlin("kapt")
     id("org.jetbrains.kotlin.plugin.spring")
     id("io.freefair.lombok")
-    id("io.spring.dependency-management")
     id("org.jlleitschuh.gradle.ktlint")
 }
 
@@ -26,10 +24,6 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor:$coroutinesVersion")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-rx2:$coroutinesVersion")
 
-    implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
-    implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310")
-    implementation("org.awaitility:awaitility-kotlin")
-
     implementation("com.capraro:kalidation:1.5.0")
 
     implementation("org.mapstruct:mapstruct:$mapstructVersion")
@@ -37,6 +31,11 @@ dependencies {
     kaptTest("org.mapstruct:mapstruct-processor:${mapstructVersion}")
     implementation("com.github.pozo:mapstruct-kotlin:1.3.1.2")
     kapt("com.github.pozo:mapstruct-kotlin-processor:1.3.1.2")
+
+    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.11.2")
+    implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.2")
+
+    implementation("org.awaitility:awaitility-kotlin:4.0.3")
 
     testImplementation("org.jetbrains.kotlin:kotlin-test")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit")
@@ -72,9 +71,3 @@ tasks.filter { listOf("compileJava", "compileTestJava").contains(it.name) }
     .forEach { task ->
         task.source = project.properties["delombok"].let { it as Delombok }.target.asFileTree
     }
-
-dependencyManagement {
-    imports {
-        mavenBom(SpringBootPlugin.BOM_COORDINATES)
-    }
-}

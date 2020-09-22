@@ -1,3 +1,12 @@
+##2.0.5
+
+### ⚠ BREAKING CHANGES
+ spring bom and spring boot plugin removed
+ 
+### Bug Fixes
+
+spring bom and spring boot plugin removed due to kotlin incompatibility 
+
 ## 2.0.0
 ### Features
  - Kotlin common libraries up version (1.4.10)
