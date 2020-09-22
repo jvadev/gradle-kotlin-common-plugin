@@ -19,8 +19,6 @@ dependencies {
     implementation(kotlin("allopen", kotlinVersion))
     implementation("org.jlleitschuh.gradle:ktlint-gradle:9.2.1")
     implementation("io.freefair.gradle:lombok-plugin:5.0.0-rc6")
-    implementation("org.springframework.boot:spring-boot-gradle-plugin:2.2.6.RELEASE")
-    implementation("io.spring.gradle:dependency-management-plugin:1.0.9.RELEASE")
 }
 
 pluginBundle {

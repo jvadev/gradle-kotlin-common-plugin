@@ -7,7 +7,6 @@ plugins {
     kotlin("kapt")
     id("org.jetbrains.kotlin.plugin.spring")
     id("io.freefair.lombok")
-    id("io.spring.dependency-management")
     id("org.jlleitschuh.gradle.ktlint")
 }
 
@@ -25,12 +24,12 @@ dependencies {
 
     implementation("org.mapstruct:mapstruct:1.3.1.Final")
     implementation("com.github.pozo:mapstruct-kotlin:1.3.1.2")
-    implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
-    implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310")
-    implementation("org.awaitility:awaitility-kotlin")
-
     kapt("org.mapstruct:mapstruct-processor:1.3.1.Final")
     kapt("com.github.pozo:mapstruct-kotlin-processor:1.3.1.2")
+
+    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.11.2")
+    implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.2")
+    implementation("org.awaitility:awaitility-kotlin:4.0.3")
 
     testImplementation("org.jetbrains.kotlin:kotlin-test")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit")
