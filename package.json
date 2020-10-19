@@ -170,7 +170,7 @@
       [
         "@semantic-release/exec",
         {
-          "publishCmd": "./gradlew publishPlugins -Dorg.gradle.daemon=false -Pversion=${nextRelease.version}"
+          "publishCmd": "./gradlew publishPlugins"
         }
       ]
     ]
