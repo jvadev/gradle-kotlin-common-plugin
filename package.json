@@ -1,4 +1,5 @@
 {
+  "name": "gradle-kotlin-common-plugin",
   "devDependencies": {
     "@semantic-release/changelog": "5.0.1",
     "@semantic-release/commit-analyzer": "8.0.1",
@@ -8,7 +9,7 @@
     "@semantic-release/release-notes-generator": "9.0.1",
     "conventional-changelog-conventionalcommits": "4.2.3",
     "gradle-semantic-release-plugin": "1.4.1",
-    "semantic-release": "^17.0.4"
+    "semantic-release": "^17.2.1"
   },
   "release": {
     "plugins": [
@@ -166,12 +167,6 @@
             "CHANGELOG.md"
           ]
         }
-      ],
-      [
-        "@semantic-release/exec",
-        {
-          "publishCmd": "./gradlew publishPlugins"
-        }
       ]
     ]
   },
@@ -180,5 +175,10 @@
   },
   "scripts": {
     "semantic-release": "semantic-release"
+  },
+  "version": "0.0.0-development",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jvadev/gradle-kotlin-common-plugin.git"
   }
 }
