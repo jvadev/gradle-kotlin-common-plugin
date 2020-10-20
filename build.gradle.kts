@@ -19,6 +19,14 @@ dependencies {
     implementation(kotlin("allopen", kotlinVersion))
     implementation("org.jlleitschuh.gradle:ktlint-gradle:9.4.0")
     implementation("io.freefair.gradle:lombok-plugin:5.0.0-rc6")
+
+    testImplementation("io.kotest:kotest-runner-junit5-jvm:4.2.3")
+    testImplementation("io.kotest:kotest-assertions-core-jvm:4.2.3")
+}
+
+tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
+    kotlinOptions.jvmTarget = "11"
+    kotlinOptions.freeCompilerArgs = listOf("-Xjsr305=strict")
 }
 
 pluginBundle {
