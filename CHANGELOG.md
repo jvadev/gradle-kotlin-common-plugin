@@ -1,3 +1,12 @@
+## [2.0.0](https://github.com/jvadev/gradle-kotlin-common-plugin/compare/v1.1.3...v2.0.0) (2020-10-21)
+
+
+### ⚠ BREAKING CHANGES
+
+* Mapstruct from Beta to 1.4.1.Final up version
+
+* Merge pull request #13 from jvadev/mapstruct-up-version ([7f00bb1](https://github.com/jvadev/gradle-kotlin-common-plugin/commit/7f00bb1174a1bbc1e5774b3b15de3b7615945842)), closes [#13](https://github.com/jvadev/gradle-kotlin-common-plugin/issues/13)
+
 ### [1.1.3](https://github.com/jvadev/gradle-kotlin-common-plugin/compare/v1.1.2...v1.1.3) (2020-10-21)
 
 
