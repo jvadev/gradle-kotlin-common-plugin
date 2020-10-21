@@ -13,7 +13,7 @@ tasks.find { it.name == "generateLombokConfig" }?.enabled = false
 
 val coroutinesVersion = "1.3.9"
 val kotestVersion = "4.2.5"
-val mapstructVersion = "1.4.0.Beta3"
+val mapstructVersion = "1.4.1.Final"
 
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-reflect:1.4.10")
