@@ -1,3 +1,10 @@
+## [1.1.0](https://github.com/jvadev/gradle-kotlin-common-plugin/compare/v1.0.0...v1.1.0) (2020-10-21)
+
+
+### Features
+
+* badges added ([ba4da0e](https://github.com/jvadev/gradle-kotlin-common-plugin/commit/ba4da0ea8b62f43b10bc7b36d857039717a610b9))
+
 ## 1.0.0 (2020-10-20)
 
 
