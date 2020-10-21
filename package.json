@@ -167,6 +167,12 @@
             "CHANGELOG.md"
           ]
         }
+      ],
+      [
+        "@semantic-release/exec",
+        {
+          "publishCmd": "./gradlew publishPlugins"
+        }
       ]
     ]
   },
