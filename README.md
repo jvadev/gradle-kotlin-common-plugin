@@ -1,3 +1,8 @@
+[![Build](https://github.com/jvadev/gradle-kotlin-common-plugin/workflows/Build/badge.svg)](https://github.com/jvadev/gradle-kotlin-common-plugin/actions?query=workflow%3ABuild+branch%3Amaster)
+[![Gradle Plugin Portal](https://img.shields.io/maven-metadata/v?label=Gradle%20Plugin%20Portal&logo=gradle&logoColor=blue&metadataUrl=https%3A%2F%2Fplugins.gradle.org%2Fm2%2Fcom%2Fjvadev%2Fgradle-kotlin-common-plugin%2Fcom.jvadev.gradle-kotlin-common-plugin.gradle.plugin%2Fmaven-metadata.xml)](https://plugins.gradle.org/plugin/com.jvadev.gradle-kotlin-common-plugin)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/jvadev/gradle-kotlin-common-plugin/actions?query=workflow%3ARelease)
+[![License](https://img.shields.io/github/license/jvadev/gradle-kotlin-common-plugin)](https://github.com/jvadev/gradle-kotlin-common-plugin/blob/master/LICENSE)
+
 # Gradle Kotlin Common Plugin
 
 The plugin embraces all necessary libraries to start a new Kotlin project as well as to introduce Kotlin into an existing Java one. 
