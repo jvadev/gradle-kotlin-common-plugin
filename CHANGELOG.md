@@ -1,3 +1,10 @@
+### [1.1.1](https://github.com/jvadev/gradle-kotlin-common-plugin/compare/v1.1.0...v1.1.1) (2020-10-21)
+
+
+### Bug Fixes
+
+* release to gradle portal fix ([6eb4cc4](https://github.com/jvadev/gradle-kotlin-common-plugin/commit/6eb4cc4f0991a562095a0ae0605787386b7565f6))
+
 ## [1.1.0](https://github.com/jvadev/gradle-kotlin-common-plugin/compare/v1.0.0...v1.1.0) (2020-10-21)
 
 
