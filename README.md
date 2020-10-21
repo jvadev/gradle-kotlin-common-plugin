@@ -44,7 +44,7 @@ Add this to your project's `build.gradle`:
 
 ```
 plugins {
-  id "com.jvadev.gradle-kotlin-common-plugin" version "2.0.0"
+  id "com.jvadev.gradle-kotlin-common-plugin" version "2.1.0"
 }
 ```
 
@@ -54,7 +54,7 @@ Add this to your project's `build.gradle.kts`:
 
 ```
 plugins {
-  id("com.jvadev.gradle-kotlin-common-plugin") version "2.0.0"
+  id("com.jvadev.gradle-kotlin-common-plugin") version "2.1.0"
 }
 ```
 
