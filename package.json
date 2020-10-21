@@ -168,12 +168,6 @@
             "CHANGELOG.md"
           ]
         }
-      ],
-      [
-        "@semantic-release/exec",
-        {
-          "publishCmd": "./gradlew publishPlugins -Pgradle.publish.key=${process.env.GRADLE_PUBLISH_KEY} -Pgradle.publish.secret=${process.env.GRADLE_PUBLISH_SECRET}"
-        }
       ]
     ]
   },
