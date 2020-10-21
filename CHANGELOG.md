@@ -1,3 +1,10 @@
+### [1.1.2](https://github.com/jvadev/gradle-kotlin-common-plugin/compare/v1.1.1...v1.1.2) (2020-10-21)
+
+
+### Bug Fixes
+
+* gradle publish cmd fix ([532f29b](https://github.com/jvadev/gradle-kotlin-common-plugin/commit/532f29babbbe12e0e2fccb78c949feaf03d4d7e8))
+
 ### [1.1.1](https://github.com/jvadev/gradle-kotlin-common-plugin/compare/v1.1.0...v1.1.1) (2020-10-21)
 
 
