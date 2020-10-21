@@ -1,3 +1,10 @@
+## [2.1.0](https://github.com/jvadev/gradle-kotlin-common-plugin/compare/v2.0.0...v2.1.0) (2020-10-21)
+
+
+### Features
+
+* readme update ([39b7377](https://github.com/jvadev/gradle-kotlin-common-plugin/commit/39b737701e32e2d21679a8f2dd62fe690dd8001c))
+
 ## [2.0.0](https://github.com/jvadev/gradle-kotlin-common-plugin/compare/v1.1.3...v2.0.0) (2020-10-21)
 
 
